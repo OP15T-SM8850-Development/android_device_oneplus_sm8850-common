@@ -268,4 +268,7 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
+
 include vendor/oneplus/sm8850-common/BoardConfigVendor.mk
+
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true

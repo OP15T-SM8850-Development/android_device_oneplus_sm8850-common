@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: Apache-2.0
+cc_library_shared {
+    name: "libgui_sm8850_shim",
+    srcs: ["SurfaceComposerClientShim.cpp"],
+    shared_libs: ["libbinder", "libgui", "libutils"],
+    compile_multilib: "64",
+    system_ext_specific: true,
+}

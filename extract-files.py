@@ -100,7 +100,8 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_line_if_missing('lseek: 1'),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
-        .replace_needed('libaudioclient.so', 'libaudiobase.so'),
+        .replace_needed('libaudioclient.so', 'libaudiobase.so')
+        .add_needed('libgui_sm8850_shim.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .add_needed('libaudiobase.so')
         .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),

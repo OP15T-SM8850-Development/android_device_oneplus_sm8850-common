@@ -977,7 +977,6 @@ odm/bin/oplus_sensor_fb
 odm/bin/oplus_sensor_logger_daemon
 odm/etc/init/init.oplus.sensor.rc
 odm/lib64/liboplus_service.so
-odm/lib64/libsensorbridge.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/qsap_dcfd
@@ -1291,3 +1290,4 @@ vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+

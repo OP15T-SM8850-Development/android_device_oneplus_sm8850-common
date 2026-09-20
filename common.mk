@@ -508,5 +508,24 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8850-common/sm8850-common-vendor.mk)
+
+
+
+# Audio HAL
+PRODUCT_PACKAGES += \
+    audiohalservice.qti \
+    libagmipcservice \
+    libpalipcservice \
+    libaudiocorehal.qti \
+    libaudiocorehal.default \
+    libaudioeffecthal.qti \
+    libsoundtriggerhal.qti
+
+# Runtime dependencies of stock blobs with separately installed AIDL libraries.
+PRODUCT_PACKAGES += \
+    android.hardware.audio.core-V4-ndk.vendor \
+    android.hardware.media.c2-V1-ndk.vendor \
+    libwfdaac_vendor

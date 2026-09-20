@@ -203,7 +203,7 @@ vendor.gatekeeper.is_security_level_spu=0
 # Graphics
 debug.graphics.game_default_frame_rate.disabled=0
 debug.sf.auto_latch_unsignaled=1
-debug.sf.disable_client_composition_cache=0
+debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration.144=10333333
 debug.sf.early.app.duration.165=10333333
 debug.sf.early.app.duration.60=16666666
@@ -341,3 +341,10 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# SnapAlloc
+vendor.gralloc.enable_snapalloc=1
+
+# RenderEngine Vulkan
+debug.renderengine.backend=skiavkthreaded
+service.sf.prime_shader_cache=0
