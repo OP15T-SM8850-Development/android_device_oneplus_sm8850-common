@@ -63,16 +63,12 @@
     <!-- Default notification vibration pattern -->
     <integer-array name="config_defaultNotificationVibePattern">
         <item>0</item>
-        <item>30</item>
-        <item>80</item>
-        <item>50</item>
+        <item>250</item>
     </integer-array>
 
     <!-- Fallback notification vibration pattern -->
     <integer-array name="config_notificationFallbackVibePattern">
         <item>0</item>
-        <item>30</item>
-        <item>80</item>
-        <item>50</item>
+        <item>250</item>
     </integer-array>
 </resources>
