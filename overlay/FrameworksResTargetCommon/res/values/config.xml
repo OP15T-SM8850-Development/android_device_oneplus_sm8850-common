@@ -60,4 +60,19 @@
         <item>/apex/com.android.art/javalib/core-oj.jar</item>
         <item>/apex/com.android.art/javalib/core-libart.jar</item>
     </string-array>
+    <!-- Default notification vibration pattern -->
+    <integer-array name="config_defaultNotificationVibePattern">
+        <item>0</item>
+        <item>30</item>
+        <item>80</item>
+        <item>50</item>
+    </integer-array>
+
+    <!-- Fallback notification vibration pattern -->
+    <integer-array name="config_notificationFallbackVibePattern">
+        <item>0</item>
+        <item>30</item>
+        <item>80</item>
+        <item>50</item>
+    </integer-array>
 </resources>
