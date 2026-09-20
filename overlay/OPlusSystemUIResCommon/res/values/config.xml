@@ -10,4 +10,10 @@
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">60</integer>
+    <!-- Require proximity sensor check before triggering doze gestures -->
+    <bool name="doze_long_press_proximity_check">true</bool>
+    <bool name="doze_double_tap_proximity_check">true</bool>
+    <bool name="doze_proximity_check_before_pulse">true</bool>
+    <bool name="doze_long_press_uses_prox">true</bool>
+    <bool name="doze_single_tap_uses_prox">true</bool>
 </resources>
