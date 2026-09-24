@@ -526,6 +526,5 @@ PRODUCT_PACKAGES += \
 
 # Runtime dependencies of stock blobs with separately installed AIDL libraries.
 PRODUCT_PACKAGES += \
-    android.hardware.audio.core-V4-ndk.vendor \
     android.hardware.media.c2-V1-ndk.vendor \
     libwfdaac_vendor

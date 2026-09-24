@@ -119,7 +119,17 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/etc/media_codecs_canoe_v2.xml',
     ): blob_fixup()
         .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
+    # These blobs use the V3 in-process ABI. V4 pulls in audio.common V5,
+    # whose PlaybackTrackMetadata layout is incompatible with the stock HAL.
+    (
+        'vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so',
+        'vendor/lib64/libaudioplatformconverter.qti.so',
+        'vendor/lib64/libqtigefar.so',
+        'vendor/lib64/libwfdmmsrc_proprietary.so',
+    ): blob_fixup()
+        .replace_needed('android.hardware.audio.core-V4-ndk.so', 'android.hardware.audio.core-V3-ndk.so'),
     'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()
+        .replace_needed('android.hardware.audio.core-V4-ndk.so', 'android.hardware.audio.core-V3-ndk.so')
         .add_needed('libaudioutils_shim.so')
         .add_needed('libbluetooth_audio_session_aidl_shim.so'),
     (
