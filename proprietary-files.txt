@@ -187,7 +187,11 @@ vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
 
-# Bluetooth (A2DP)
+# Bluetooth (A2DP / LE Audio)
+vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations_qti.json
+vendor/etc/aidl/le_audio/aidl_default_audio_set_scenarios_qti.json
+vendor/etc/aidl/le_audio/aidl_default_vendor_audio_set_scenarios_qti.json
+
 vendor/etc/vintf/manifest/bcs-ranging.xml
 vendor/etc/vintf/manifest/bluetooth-finder.xml
 vendor/etc/vintf/manifest/bluetooth_hci.xml

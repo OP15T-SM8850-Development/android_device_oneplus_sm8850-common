@@ -1,8 +1,11 @@
-#
 # Copyright (C) 2022-2026 The LineageOS Project
-#
 # SPDX-License-Identifier: Apache-2.0
-#
+
+on boot
+    # Display
+    write /sys/kernel/oplus_display/esd_status 0
+    chown system system /sys/kernel/oplus_display/esd_status
+    chmod 0664 /sys/kernel/oplus_display/esd_status
 
 on post-fs-data
     # ADSP ramdump
@@ -23,6 +26,9 @@ on property:ro.boot.serialno=*
     setprop ro.vendor.oplus.radio.serialno ${ro.boot.serialno}
 
 on property:sys.boot_completed=1
+    # Display
+    write /sys/kernel/oplus_display/esd_status 0
+
     # Widevine
     copy /vendor/etc/oplus_Widevine_licenses.pfm /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
