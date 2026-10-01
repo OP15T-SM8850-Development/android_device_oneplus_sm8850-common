@@ -80,7 +80,6 @@ qcom_aoss.ko
 qcom_cpu_vendor_hooks.ko
 qcom_cpucp.ko
 qcom_dma_heaps.ko
-qcom_dynamic_ramoops.ko
 qcom_hwspinlock.ko
 qcom_ice.ko
 qcom_iommu_debug.ko

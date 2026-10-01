@@ -254,7 +254,6 @@ qcom_cpu_vendor_hooks.ko
 qcom_cpucp.ko
 qcom_cpuss_sleep_stats_v4.ko
 qcom_dma_heaps.ko
-qcom_dynamic_ramoops.ko
 qcom_edac.ko
 qcom_fdcvs.ko
 qcom_glink.ko
