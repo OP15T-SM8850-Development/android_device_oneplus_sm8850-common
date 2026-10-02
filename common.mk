@@ -81,6 +81,7 @@ PRODUCT_PACKAGES += \
     libmediautils_vendor.vendor \
     libmemunreachable.vendor \
     libpal_sounddose \
+    libpaleventnotifier \
     libpalipcservice \
     libqcompostprocbundle \
     libqcomvisualizer \
