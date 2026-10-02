@@ -421,11 +421,11 @@ vendor/etc/media_codecs_canoe_sku1.xml
 vendor/etc/media_codecs_canoe_sku1_vendor.xml
 vendor/etc/media_codecs_canoe_sku2.xml
 vendor/etc/media_codecs_canoe_sku2_vendor.xml
-vendor/etc/media_codecs_canoe_sku3.xml
+vendor/etc/media_codecs_canoe_sku3_vendor.xml:vendor/etc/media_codecs_canoe_sku3.xml;TRYSRCFIRST
 vendor/etc/media_codecs_canoe_sku3_vendor.xml
 vendor/etc/media_codecs_canoe_v1.xml
 vendor/etc/media_codecs_canoe_v1_vendor.xml
-vendor/etc/media_codecs_canoe_v2.xml
+vendor/etc/media_codecs_canoe_v2_vendor.xml:vendor/etc/media_codecs_canoe_v2.xml;TRYSRCFIRST
 vendor/etc/media_codecs_canoe_v2_vendor.xml
 vendor/etc/media_codecs_canoe_v3.xml
 vendor/etc/media_codecs_canoe_v3_vendor.xml
@@ -433,11 +433,11 @@ vendor/etc/media_codecs_performance_canoe_sku1.xml
 vendor/etc/media_codecs_performance_canoe_sku1_vendor.xml
 vendor/etc/media_codecs_performance_canoe_sku2.xml
 vendor/etc/media_codecs_performance_canoe_sku2_vendor.xml
-vendor/etc/media_codecs_performance_canoe_sku3.xml
+vendor/etc/media_codecs_performance_canoe_sku3_vendor.xml:vendor/etc/media_codecs_performance_canoe_sku3.xml;TRYSRCFIRST
 vendor/etc/media_codecs_performance_canoe_sku3_vendor.xml
 vendor/etc/media_codecs_performance_canoe_v1.xml
 vendor/etc/media_codecs_performance_canoe_v1_vendor.xml
-vendor/etc/media_codecs_performance_canoe_v2.xml
+vendor/etc/media_codecs_performance_canoe_v2_vendor.xml:vendor/etc/media_codecs_performance_canoe_v2.xml;TRYSRCFIRST
 vendor/etc/media_codecs_performance_canoe_v2_vendor.xml
 vendor/etc/media_codecs_performance_canoe_v3.xml
 vendor/etc/media_codecs_performance_canoe_v3_vendor.xml
@@ -1149,3 +1149,8 @@ vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# ALS correction service
+odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service
+odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc
+odm/etc/vintf/manifest/manifest_oplusSensor_aidl.xml

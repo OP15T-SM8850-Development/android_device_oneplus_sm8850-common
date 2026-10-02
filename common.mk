@@ -81,6 +81,7 @@ PRODUCT_PACKAGES += \
     libmediautils_vendor.vendor \
     libmemunreachable.vendor \
     libpal_sounddose \
+    libpaleventnotifier \
     libpalipcservice \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -424,7 +425,8 @@ endif
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
-    sensors.dynamic_sensor_hal
+    sensors.dynamic_sensor_hal \
+    sensors.fusionlight
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -503,6 +505,7 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
 $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,USE_OPLUSTOUCH,true)
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,HTPR_ENABLE_NODE,REPORT_RATE_NODE)
 endif
 
 # Update engine
