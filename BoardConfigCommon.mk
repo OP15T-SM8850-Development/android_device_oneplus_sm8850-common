@@ -158,7 +158,12 @@ include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
+# Keep AVB verification and dm-verity enabled in release user builds.
+ifeq ($(TARGET_BUILD_VARIANT),user)
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 0
+else
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+endif
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
 BOARD_AVB_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
