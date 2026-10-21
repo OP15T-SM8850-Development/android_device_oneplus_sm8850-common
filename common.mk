@@ -323,6 +323,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
+$(call soong_config_set,lineage_health,charging_control_plc_path,/sys/class/oplus_chg/common/plc)
 
 # LiveDisplay
 PRODUCT_PACKAGES += \

@@ -25,6 +25,9 @@ persist.vendor.btstack.enable.lpa=true
 ro.bluetooth.finder.supported=true
 ro.bluetooth.leaudio_offload.supported=true
 
+# Charging
+persist.sys.battery_bypass_supported=true
+
 # CNE
 persist.vendor.cne.feature=1
 
